@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 df = pd.read_csv('C:/Users/lab53/Downloads/restaurants_reviews.csv')
-text_column = 'review_text'  # supondo que a coluna se chame 'review'
+text_column = 'review_text'  
 if text_column not in df.columns:
     print("Colunas disponíveis:", df.columns)
     raise ValueError("Ajuste o nome da coluna com as avaliações de texto.")
